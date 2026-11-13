@@ -1,0 +1,116 @@
+/*Hoja de estilos del blog personal */
+/* importar 2 fonts de google inter para el texto y poppins para títulos*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&play=swap");
+/*Crear variables*/
+:root {
+    /*Colores*/
+    --color-primario: #376808;
+    --color-primario-oscuro: #147e2b;
+    --color-fondo: #77B96D;
+    --color-superficie: #77B96D;
+    --color-texto: #213900;
+    --color-texto-suave: #6b7280;
+    --color-borde: #e5e7eb;
+
+    /*Tipografía*/
+    --fuente-texto: "Inter", system-ui, sans-serif;
+    --fuente-titulos: "Poppins", system-ui, sans-serif;
+    /*Medidas*/
+    --ancho-contenido: 960px;
+}
+/*Corrección del cálculo del tamanio de las cajas*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body {
+    /* Esto es sin variables
+    background: color #f4f6f8;;
+    color: #1f2937;
+    margin: 0;
+    */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: o;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1,h2,h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-texto);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.75;
+}
+
+h3{
+    font-size: 1.25em;
+}
+/*Estilos a los enlaces*/
+a{
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover {
+    color: var(--color-primario-oscuro);
+    text-decoration: underline;
+}
+/*Contenido*/
+main{
+    max-width: var(--ancho-contenido);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    border: 2px dashed var(--color-primario);
+}
+/*Encabezado*/
+header{
+    background: linear-gradient(135deg, var(--color-primario),var(--color-primario-oscuro));
+    color: #fff;
+    text-align: 3rem 1.5rem 1.5rem;
+}
+header h1{
+    color: #fff;
+    margin: 0 0 0.5rem;
+}
+header h1{
+    margin: 0 0 1.5rem;
+    opacity: 0.9;
+}
+/*Menú*/
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*Convertir a los enlaces en botones*/
+nav a{
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    color: #fff;
+    transition: background-color 0.2s; 
+}
+nav a:hover{
+    background-color: rgba(225, 225, 225, 0.2 );
+    color: #fff;
+    text-decoration: none;
+}
+nav a.activo{
+    background-color: #fff;
+    color: var(--color-primario);
+}
+nav
