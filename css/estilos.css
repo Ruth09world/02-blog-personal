@@ -36,7 +36,7 @@ body {
     */
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    margin: o;
+    margin: 0;
     font-family: var(--fuente-texto);
     font-size: 1rem;
     line-height: 1.6;
@@ -89,7 +89,7 @@ header h1{
 }
 header h1{
     margin: 0 0 1.5rem;
-    opacity: 0.9;
+    opacity: 0.9 --color-superficie;
 }
 /*Menú*/
 nav ul{
@@ -144,6 +144,9 @@ nav a.activo{
 .tarjeta:hover{
     transform: translateY(-4px);
     box-shadow: var(--somsombra-fuerte);
+    color: var(--color-texto);
+    font-size: 0.875rem;
+    text-align: center;
 }
 .tarjeta .boton{
     margin-top: auto;
@@ -162,4 +165,72 @@ nav a.activo{
     color: #fff;
     text-decoration: none;
 }
-
+/*Estilos de los artículos*/
+main > article {
+    background-color:  var(--color-superficie);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 2rem;
+}
+main > article > h2 {
+    margin-top: 0;
+}
+/*para poner respomsive a la img*/
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radio);
+    display: block;
+    margin: 0 auto;
+}
+figure{
+    margin: 1.5rem 0;
+}
+figcaption{
+    margin: 0.5rem;
+    color: var(--color-texto);
+    font-size: 0.875rem;
+    text-align: center;
+}
+/*Citas*/
+blockquote {
+margin: 1.5rem 0;
+padding: 1rem 1.5rem;
+background-color: var(--color-fondo);
+border-left: 4px solid var(--color-primario);
+border-radius: 0 var(--radio) var(--radio) 0;
+font-style: italic;
+}
+blockquote p{
+    margin: 0.25rem 0;
+}
+/*tabla*/
+table{
+    width: 0.25 rem 0;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+th, td{
+    padding: 0.7rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-borde);
+}
+thead th{
+    background-color: var(--color-primario);
+    color: #fff;
+}
+caption{
+    caption-side: top;
+    padding: 0.75rem;
+    font-weight: 600;
+    text-align: left;
+}
+tbody tr:hover{
+    background-color: var(--color-fondo);
+}
+.pagina-simple{
+    background-color: var(--color-superficie);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 2rem;
+}
